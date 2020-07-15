@@ -1,6 +1,6 @@
 # Unit tests to check your solution
 import unittest
-from distributions.gaussian import Gaussian
+from standard_distributions.gaussian import Gaussian
 
 
 class TestGaussianClass(unittest.TestCase):

@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
     requirements = f.read().splitlines()
 
 setuptools.setup(
-    name="distributions",
+    name="standard_distributions",
     version="0.0.1",
     description="Probability distributions package",
     url="",

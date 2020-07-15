@@ -1,6 +1,6 @@
 import math
 import matplotlib.pyplot as plt
-from distributions import Distribution
+from standard_distributions import Distribution
 
 
 class Binomial(Distribution):
@@ -178,6 +178,6 @@ class Binomial(Distribution):
 
         """
 
-        return "mean {}, standard deviation {}, p {}, n {}".format(
+        return "mean {}, standard deviation {}, probability {}, size {}".format(
             self.mean, self.stdev, self.probability, self.size
         )

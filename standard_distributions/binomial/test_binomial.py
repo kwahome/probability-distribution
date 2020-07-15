@@ -1,6 +1,6 @@
 # Unit tests to check your solution
 import unittest
-from distributions.binomial import Binomial
+from standard_distributions.binomial import Binomial
 
 
 class TestBinomialClass(unittest.TestCase):
