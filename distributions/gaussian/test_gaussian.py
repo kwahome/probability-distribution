@@ -1,12 +1,12 @@
 # Unit tests to check your solution
 import unittest
-from gaussian import Gaussian
+from distributions.gaussian import Gaussian
 
 
 class TestGaussianClass(unittest.TestCase):
     def setUp(self):
         self.gaussian = Gaussian(25, 2)
-        self.file_path = "../resources/numbers.txt"
+        self.file_path = "../../resources/numbers.txt"
 
     def test_initialization(self):
         self.assertEqual(self.gaussian.mean, 25, "incorrect mean")
