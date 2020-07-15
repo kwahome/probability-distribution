@@ -61,27 +61,19 @@ class Gaussian(Distribution):
                 
         Args:
             file_name (string): name of a file to read from
+            sample (bool): whether the data represents a sample or population
         
         Returns:
             None
         
         """
+        super(Gaussian, self).read_data_file(file_name=file_name)
 
-        # This code opens a data file and appends the data to a list called data_list
-        with open(file_name) as file:
-            data_list = []
-            line = file.readline()
-            while line:
-                data_list.append(int(line))
-                line = file.readline()
-        file.close()
-
-        self.data = data_list
         self.mean = self.calculate_mean()
         self.stdev = self.calculate_stdev(sample)
 
     def plot_histogram(self):
-        """Method to output a histogram of the instance variable data using 
+        """Method to output a histogram of the instance variable data using
         matplotlib pyplot library.
         
         Args:
