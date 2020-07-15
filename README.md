@@ -1,1 +1,1 @@
-# gaussian
+# probability distribution
